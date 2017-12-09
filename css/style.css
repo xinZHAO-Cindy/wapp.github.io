@@ -1,0 +1,33 @@
+#mapContainer,
+#infoContainer{
+	height: 50%;
+}
+
+#map {
+	height: 100%;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.poi{
+	position: absolute;
+	bottom: 0;
+}
+.circle{
+	height: 50px;
+	width: 50px;
+	background: url('http://maplacejs.com/website/images/red-dot.png') no-repeat center/100% auto;
+}
+#visual{
+	overflow: hidden;
+}
+
+.hide{
+	display: none;
+}
+
+.tooltip_name{
+	white-space: nowrap;
+}

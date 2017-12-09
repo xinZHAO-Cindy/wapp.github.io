@@ -1,0 +1,51 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta id="theme-color" name="theme-color" content="#ffffff">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/mdb.css">
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="card" id="visual">
+			<video id="video" autoplay playsinline>
+			</video>
+
+		</div>
+		<div class="card-body">
+			<div class="card-title text-center">
+				<h4>The current compass heading is: </h4>
+				<h4 id="heading"></h4>
+			</div>
+			<!-- <div>
+				<p id="supported" class="card-text"></p>
+			</div> -->
+		</div>
+		<div id="mapContainer" style="display:none">
+			<div id="map">
+			</div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_432x79gFb1uhTYGjzOuSdbl_IFgd1Sw&libraries=places&callback=pos"
+			 async defer></script>
+		</div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Bearing</th>
+					<th>Some Angle</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+			<tbody id="infoContainer">
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
